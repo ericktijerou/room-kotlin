@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..9) {
             val product = Product(i+1,
                     getString(R.string.name_format, i.toString()),
-                    "https://picsum.photos/500/500?image=$i",
+                    "https://picsum.photos/500/500?image=${i+10}",
                     if (i == 0) 50 else i * 100)
             list.add(product)
         }
